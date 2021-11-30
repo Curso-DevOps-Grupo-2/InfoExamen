@@ -9,13 +9,21 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
+    private String rut;
     private String nombre;
     private int edad;
     private String prevision;
     private String nacionalidad;
     private String comuna;
     private String correo;
+
+    public String getRut() {
+        return rut;
+    }
+
+    public void setRut(String rut) {
+        this.rut = rut;
+    }
 
     public String getNombre() {
         return nombre;
